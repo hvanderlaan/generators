@@ -49,7 +49,7 @@ def GetPass(wordCount, minWordLength, maxWordLength, dictFilePath):
     except:
         pw = "Error in functio GetPass"
 
-    return pw
+    return pw + random.choice(seperators)
 
 def main():
     args = get_args()
